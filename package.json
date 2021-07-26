@@ -1,0 +1,33 @@
+{
+  "name": "js-advanced-diploma",
+  "version": "1.0.0",
+  "description": "diplom",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Polina172001/js-advanced-diploma.git"
+  },
+  "author": "Polina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Polina172001/js-advanced-diploma/issues"
+  },
+  "homepage": "https://github.com/Polina172001/js-advanced-diploma#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.8",
+    "@typescript-eslint/eslint-plugin": "^4.28.5",
+    "@typescript-eslint/parser": "^4.28.5",
+    "eslint": "^7.31.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.46.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "core-js": "^3.15.2"
+  }
+}

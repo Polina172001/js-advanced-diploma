@@ -1,6 +1,11 @@
 export function calcTileType(index, boardSize) {
   // TODO: write logic here
-  return 'center';
+  const field = [
+    'top-left', ...Array(boardSize - 2).fill('top'), 'top-rigth',
+    ...Array(boardSize - 2).fill(['left', ...Array(boardSize - 2).fill('center'), 'right']),
+    'bottom-left', ...Array(boardSize - 2).fill('bottom'), 'bottom-right',
+  ].flat();
+  return boardSize[index];
 }
 
 export function calcHealthLevel(health) {
