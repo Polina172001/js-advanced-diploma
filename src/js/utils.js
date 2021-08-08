@@ -5,7 +5,7 @@ export function calcTileType(index, boardSize) {
     ...Array(boardSize - 2).fill(['left', ...Array(boardSize - 2).fill('center'), 'right']),
     'bottom-left', ...Array(boardSize - 2).fill('bottom'), 'bottom-right',
   ].flat();
-  return boardSize[index];
+  return field[index];
 }
 
 export function calcHealthLevel(health) {
