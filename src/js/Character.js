@@ -24,5 +24,4 @@ export default class Character {
     this.defence = Math.max(this.defence, this.defence * ((1.8 - healthBefore) / 100));
   }
 
-
 }

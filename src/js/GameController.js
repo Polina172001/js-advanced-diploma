@@ -27,7 +27,7 @@ export default class GameController {
   init() {
     // TODO: add event listeners to gamePlay events
     // TODO: load saved stated from stateService
-    this.gamePlay.drawUi(themes[this.GameState.level]);
+    this.gamePlay.drawUi(themes[this.gameState.level]);
     this.userTeam.addAll(generateTeam([Bowman, Swordsman], 1, 2));
     this.computerTeam.addAll(generateTeam(this.computerCharacter, 1, 2));
     this.addTheTeamToPosition(this.userTeam, this.getUserStartPositions());
@@ -105,30 +105,7 @@ export default class GameController {
     // При наведении на игрока показываем инфо
     if (this.getItem(index)) {
       const item = this.getItem(index).character;
-      const message = `\u {
-        1 F396
-      }
-      $ {
-        item.level
-      }\
-      u {
-        2694
-      }
-      $ {
-        item.attack
-      }\
-      u {
-        1 F6E1
-      }
-      $ {
-        item.defence
-      }\
-      u {
-        2764
-      }
-      $ {
-        item.health
-      }`;
+      const message = `\u{1F396}${item.level}\u{2694}${item.attack}\u{1F6E1}${item.defence}\u{2764}${item.health}`;
       this.gamePlay.showCellTooltip(message, index);
     }
 
